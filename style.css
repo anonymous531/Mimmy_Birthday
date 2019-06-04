@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+/* HTML Reset / Alignment */
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height:100%;
+    /* background: #0086ff; */
+    background-color:rgb(242,128,154);
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Uncomment the rule below to show a border around all of the div elements*/
+
+/*
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+*/
+
+/* Sizing */
+#content{
+    margin:0;
+    height:50%;
+    width:100%;
+    background-color: rgb(242,128,154);
+    font-size:33px;
+    font-family: "隶书";
+    font-weight: bold;
+    color:white;
+}
+.container {
+    height:50%;
+    width: 600px;
+    text-align: center;
+    color: #fff;
+}
+
+.cake {
+    margin-bottom: 80px;
+    height: 210px;
+    max-height: 100%;
+}
+
+.sponge {
+    width: 50%;
+    height: 73%;
+}
+
+.icing {
+    height: 15%;
+}
+
+.candle {
+    width: 3%;
+    height: 40%;
+}
+
+.candle > .flame {
+    width: 60%;
+    margin-top: 30%;
+    height: 25%;
+}
+
+.candle > .wick {
+    width: 5%;
+    height: 5%;
+}
+
+.candle > .wax {
+    width: 100%;
+    height: 70%;
+}
+h1{
+    display:inline-block;
+    margin:0
+}
+#name{
+    display:inline-block;
+    font-size:40px;
+    margin:0;
+    position: absolute;
+    bottom: 0;
+    right:2%;
+    font-family: '隶书'
+}
+/* Styling */
+
+/* .balloon {
+    align-self: flex-start;
+    width: 300px;
+    max-width: 100%;
+}
+.balloon > img {
+    display: block;
+    max-width: 100%;
+}
+
+.sponge {
+    position: relative;
+    margin: 0 auto;
+    background: #ffd878;
+    border-radius: 0 0 30px 30px;
+}
+
+.filling {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 40%;
+    left: 0;
+    border-top: 30px solid #ea5774;
+    border-bottom: 28px solid #fff;
+}
+
+.icing {
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 30px 30px 0 0;
+}
+.icing:after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#fff 70%, transparent 50%);
+    background-repeat: repeat-x;
+    background-size: 14.4% 100%;
+}
+
+.candle {
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.candle > .flame {
+    margin: 0 auto;
+    background-image: radial-gradient(circle, #ea5774, #ffd45c);
+    border-radius: 8px 8px 8px 8px / 20px 20px 8px 8px;
+	animation:
+		candle-wind 5s ease-in-out infinite,
+		candle-size 10s ease-in-out infinite,
+		candle-flickr 5s ease-in-out infinite;
+	transform-origin: 50% 100%;
+}
+
+.candle > .wick {
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 2px 2px 0 0;
+}
+
+.candle > .wax {
+    background: #64c8ff;
+    border: 1px solid #0074b3;
+    border-radius: 10px 10px 0 0;
+}
+h1{
+    display:inline-block;
+    margin:0
+}
+#name{
+    display:inline-block;
+    font-size:40px;
+    margin:0;
+    position: absolute;
+    bottom: 0;
+    right:2%;
+    font-family: '隶书'
+} */
+/* CSS Animation */
+
+@keyframes candle-wind {
+	0%, 22%, 49%, 62%, 81%, 100% {
+		border-radius: 2px 14px 8px 8px / 20px 20px 8px 8px;
+	}
+	14%, 32%, 56%, 70%, 89% {
+		border-radius: 14px 2px 8px 8px / 20px 20px 8px 8px;
+	}
+}
+
+@keyframes candle-size {
+	0%, 22%, 49%, 62%, 81%, 100% {
+		transform: scale(1,1);
+	}
+	14%, 32%, 56%, 70%, 89% {
+		transform: scale(0.9, 1.2);
+	}
+}
+
+@keyframes candle-flickr {
+	0%, 22%, 49%, 62%, 81%, 100% {
+		box-shadow: 0 0 20px 0 rgba(255,202,0,0.7);
+	}
+	14%, 32%, 56%, 70%, 89% {
+		box-shadow: 0 0 20px 0 rgba(255,202,0,.8);
+	}
+}
