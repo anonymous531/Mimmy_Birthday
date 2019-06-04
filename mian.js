@@ -85,7 +85,7 @@ var code = `.balloon {
 
 `
 
-var nameText =`By 206~`
+var nameText =`By 206~~`
 var birthText = `Happy Birthday!`
 function writeText(text,fn){
     let n = 0
