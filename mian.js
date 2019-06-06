@@ -1,6 +1,6 @@
 var text=`
     亲爱的咪咪：
-    24周岁生日快乐!!
+    18岁生日快乐!!
     在这个真正属于你的日子里
     愿时光能缓，愿故人不散
     愿你惦念的人能和你道晚安
@@ -84,6 +84,7 @@ var code = `.balloon {
 }
 
 `
+var audio = document.querySelector('#audio')
 
 var nameText =`By 206~~`
 var birthText = `Happy Birthday!`
